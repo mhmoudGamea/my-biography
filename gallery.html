@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand name-logo" href="#">Mhmouid</a>
+            <button class="navbar-toggler d-flex d-lg-none flex-column justify-content-around" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="uil uil-align-right toggler-icon"></i>
+            </button>
+            <div class="container collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-4 link-item" aria-current="page" href="./index.html">
+                            <i class="uil uil-estate me-2 d-inline d-lg-none"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-4 link-item" href="./gallery.html">
+                            <i class="uil uil-image me-2 d-inline d-lg-none"></i>Gallery
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-4 link-item" href="./about.html">
+                            <i class="uil uil-user me-2 d-inline d-lg-none"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-4 link-item" href="./contact.html">
+                            <i class="uil uil-message me-2 d-inline d-lg-none"></i>Contact me
+                        </a>
+                    </li>
+                </ul>
+                <div class="ps-3 d-none d-lg-inline icon-holder">
+                    <i class="uil uil-moon theme" id="theme-icon"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start Gallery section -->
+    <section class="gallery">
+        <div class="title-holder">
+            <h1 class="home-title">Our Photo Gallery</h1>
+        </div>
+        <div class="btn-group album-collection" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <div class="label-holder active" data-filter="all">
+                <label class="btn label" for="btnradio1">All</label>
+            </div>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <div class="label-holder" data-filter="family">
+                <label class="btn label" for="btnradio1">Family</label>
+            </div>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <div class="label-holder" data-filter="child">
+                <label class="btn label" for="btnradio2">Childs</label>
+            </div>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <div class="label-holder" data-filter="home">
+                <label class="btn label" for="btnradio3">My Home</label>
+            </div>
+        </div>
+
+        <div class="container img-holder">
+            <!-- first section-->
+            <div class="row mb-md-3 mt-md-5  justify-content-center">
+                <div class="col-sm-6 col-md-4 pic home my-1" data-item="home">
+                    <div class="img-box">
+                        <img src="./imgs/home4.jpg" alt="">
+                    </div>
+                    <div class="content-box">
+                        <h4 class="content-title">my test one</h4>
+                        <p class="content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                            nulla.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 pic home my-1" data-item="home">
+                    <div class="img-box">
+                        <img src="./imgs/home2.jpg" alt="">
+                    </div>
+                    <div class="content-box">
+                        <h4 class="content-title">my test one</h4>
+                        <p class="content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                            nulla.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 pic home my-1" data-item="home">
+                    <div class="img-box">
+                        <img src="./imgs/home3.jpg" alt="">
+                    </div>
+                    <div class="content-box">
+                        <h4 class="content-title">my test one</h4>
+                        <p class="content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                            nulla.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- second section-->
+            <div class="row mb-md-3 justify-content-center">
+                <div class="col-sm-6 col-md-4 pic family my-1" data-item="family">
+                    <div class="img-box">
+                        <img src="./imgs/family0.jpg" alt="">
+                    </div>
+                    <div class="content-box">
+                        <h4 class="content-title">my test one</h4>
+                        <p class="content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                            nulla.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 pic family my-1" data-item="family">
+                    <div class="img-box">
+                        <img src="./imgs/family1.jpg" alt="">
+                    </div>
+                    <div class="content-box">
+                        <h4 class="content-title">my test one</h4>
+                        <p class="content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                            nulla.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 pic family my-1" data-item="family">
+                    <div class="img-box">
+                        <img src="./imgs/family2.jpg" alt="">
+                    </div>
+                    <div class="content-box">
+                        <h4 class="content-title">my test one</h4>
+                        <p class="content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                            nulla.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- third section-->
+            <div class="row mb-md-3 justify-content-center">
+                <div class="col-sm-6 col-md-4 pic child my-1" data-item="child">
+                    <div class="img-box">
+                        <img src="./imgs/child0.jpg" alt="">
+                    </div>
+                    <div class="content-box">
+                        <h4 class="content-title">my test one</h4>
+                        <p class="content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                            nulla.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 pic child my-1" data-item="child">
+                    <div class="img-box">
+                        <img src="./imgs/child1.jpg" alt="">
+                    </div>
+                    <div class="content-box">
+                        <h4 class="content-title">my test one</h4>
+                        <p class="content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                            nulla.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 pic child my-1" data-item="child">
+                    <div class="img-box">
+                        <img src="./imgs/child2.jpg" alt="">
+                    </div>
+                    <div class="content-box">
+                        <h4 class="content-title">my test one</h4>
+                        <p class="content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                            nulla.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Gallery section -->
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+
+</html>
