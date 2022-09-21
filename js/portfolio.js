@@ -39,6 +39,18 @@ for (let i = 0; i < label_holder.length; i++) {
     })
 }
 
+// showing the scroll to up button
+var scrollButton = document.querySelector('span.scrolling');
+window.onscroll = function () {
+    window.scrollY >= 300 ? scrollButton.classList.add('show') : scrollButton.classList.remove('show');
+}
+
+scrollButton.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+}
 
 // portfolio section [swipper]
 let swiper = new Swiper(".my-main-container", {
