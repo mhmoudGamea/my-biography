@@ -585,6 +585,90 @@ img {
   font-size: 17px;
 }
 
+/* my family */
+.my_family {
+  margin-top: 100px !important;
+}
+
+.my_family .fam-box {
+  text-align: left;
+}
+
+.my_family .fam-box .fam-holder {
+  width: 80px;
+  height: 50px;
+  margin-right: 30px;
+  overflow: hidden;
+}
+
+.my_family .fam-box .text {
+  width: calc(100% - 80px);
+}
+
+.my_family .fam-box .fam-holder img {
+  width: 100%;
+  height: 100%;
+}
+
+.family-title {
+  margin-bottom: 70px;
+  font-size: 24px;
+}
+
+.my_family .fam-box h3 {
+  font-weight: var(--font-medium);
+  font-size: 19px;
+  margin-bottom: 22px;
+  color: var(--title-color);
+}
+
+.my_family .fam-box p {
+  color: var(--text-color);
+  letter-spacing: 1.4px;
+  line-height: 25px;
+  font-size: 17px;
+}
+
+@media(max-width:970px) {
+  .my_family .fam-box {
+    display: block !important;
+    text-align: center;
+  }
+
+  .my_family .fam-box .fam-holder {
+    width: 70px;
+    height: 40px;
+    margin-bottom: 20px;
+    display: inline-flex;
+  }
+
+  .my_family .fam-box .fam-holder img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .my_family .fam-box h3 {
+    margin-left: 44px;
+  }
+
+  .my_family .fam-box p {
+    margin-left: 44px;
+  }
+
+}
+
+@media(max-width:650px) {
+  .my_family .fam-box .fam-holder {
+    width: 60px;
+    height: 30px;
+    display: inline-flex;
+  }
+
+  .my_family .fam-box {
+    text-align: center;
+  }
+}
+
 /* portfolio*/
 .portfolio_container .main-title {
   margin-top: 80px !important;
@@ -694,7 +778,8 @@ img {
 .about .skill-title,
 .about .work-title,
 .about .education-title,
-.about .hoppy-title {
+.about .hoppy-title,
+.my_family .family-title {
   letter-spacing: 1.2px;
   font-weight: var(--font-semi-bold);
   color: var(--main);
@@ -727,6 +812,55 @@ img {
 /*-- end about page --*/
 
 /*-- start contact page --*/
+/* contact */
+.numbers .custom {
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px var(--third-color);
+}
+
+.numbers .custom h2 {
+  margin: 10px;
+  color: var(--main);
+}
+
+.numbers .custom h2 i {
+  color: var(--main-color);
+}
+
+.numbers .custom h2 i:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.numbers .custom p {
+  padding-left: 41px;
+  line-height: 22px;
+}
+
+.numbers ol li {
+  display: inline-block;
+}
+
+.numbers ol li a {
+  margin-left: 20px;
+  color: var(--main-color);
+  font-size: 20px;
+}
+
+@media(max-width:769px) {
+  .numbers .custom {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 770px) and (max-width:1000px) {
+  .numbers .my-marg {
+    margin-top: 20px;
+  }
+}
+
+/* contact */
 .contact .contact-content {
   padding-top: 110px;
 }
@@ -772,3 +906,71 @@ img {
 }
 
 /*-- end contact page --*/
+/* start footer */
+.footer {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+  background-image: url("../imgs/foot.jpg");
+  background-size: cover;
+  height: 200px;
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(103 58 183 / 35%);
+  z-index: 1;
+}
+
+.footer .container {
+  position: inherit;
+  z-index: 5;
+}
+
+.footer h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.footer h3::after {
+  position: absolute;
+  content: "";
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #673ab7;
+  width: 159px;
+  height: 2px;
+}
+
+.footer .social-links {
+  margin-top: 40px;
+}
+
+.footer .social-links i {
+  font-size: 17px;
+  color: var(--forth-color);
+  padding: 15px;
+  cursor: pointer;
+}
+
+.footer p {
+  color: var(--forth-color);
+  font-size: 19px;
+}
+
+.footer p span {
+  color: var(--forth-color);
+}
+
+/* end footer */
